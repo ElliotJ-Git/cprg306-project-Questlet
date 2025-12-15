@@ -241,8 +241,6 @@ export default function Home() {
         const totalCost = calculatePointBuyCost(abilities);
         const remaining = 27 - totalCost;
 
-        const usedStandardValues = Object.values(abilities);
-
         function updateStandard(stat, newValue) {
             setAbilities(prev => {
                 newValue = Number(newValue);
